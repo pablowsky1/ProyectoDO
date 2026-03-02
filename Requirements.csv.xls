@@ -1,0 +1,23 @@
+﻿Identifier,Competency Question / Natural language sentence (fact),Answer (For Competency Questions),Status,Comments,Extracted from (provenance)
+FR-01,What is the title of a movie?,"""Titanic""",Proposed,Basic info,movies.json
+FR-02,In which year was a movie released?,1997,Proposed,To link with Oscar year,movies.json
+FR-03,Who directed a specific movie?,List of Persons,Proposed,,movies.json
+FR-04,What is the gender of a specific director?,"""Female"", ""Male"", ""Undetermined""",Proposed,Crucial for gender analysis,directors.json
+FR-05,Who produced a specific movie?,List of Persons,Proposed,,movies.json
+FR-06,What is the gender of a producer?,"""Female"", ""Male""",Proposed,,producers.json
+FR-07,Which actors appeared in a movie?,List of Persons,Proposed,,movies.json
+FR-08,What is the gender of an actor?,"""Female"", ""Male""",Proposed,,actors.json
+FR-09,What genres is a movie associated with?,"""Drama"", ""Sci-Fi""",Proposed,,movies.json
+FR-10,Did a specific movie win an Oscar?,Boolean (Yes/No),Proposed,New Dataset Integration,Oscars CSV
+FR-11,In which category was a movie nominated?,"""Best Picture"", ""Cinematography""",Proposed,,Oscars CSV
+FR-12,Who was the specific nominee for an award?,"Person Name (e.g., ""Meryl Streep"")",Proposed,Connects Person to Award,Oscars CSV
+FR-13,Did the nominee win the award?,Boolean (True/False),Proposed,,Oscars CSV
+FR-14,"Which movies directed by women won ""Best Picture""?",List of Movies,Proposed,Complex Query (Gender + Oscar),Both Datasets
+FR-15,Which movies with a budget over X amount won an Oscar?,List of Movies,Proposed,Budget + Award correlation,movies.json + Oscars CSV
+FR-16,How many female producers has a specific movie?,Integer,Proposed,Derived from list,movies.json
+FR-17,A person can have multiple roles (Actor and Director).,Boolean,Proposed,Inferable,movies.json
+FR-18,What is the IMDb ID of a person?,"String (e.g., ""nm00001"")",Proposed,Key to merge datasets if possible,movies.json
+FR-19,A movie has a percentage of female cast members.,Float (0.0 - 100.0),Proposed,,movies.json (gender_percent)
+FR-20,In which year was the Oscar ceremony held for a specific movie?,Year (Integer),Proposed,usually year+1 of release,Oscars CSV
+FR-21,"Who are the actors nominated for ""Best Actor"" or ""Best Actress""?",List of Persons,Proposed,Filter by category name,Oscars CSV
+FR-22,"List all movies that are ""Action"" genre and won an award.",List of Movies,Proposed,Genre + Award,Both Datasets
