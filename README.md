@@ -9,10 +9,6 @@ This repository contains the requirement specification documents for an ontology
 2. **Extension Dataset:** The Oscar Award, 1927 - 2025.
    - Source: [Kaggle](https://www.kaggle.com/datasets/unanimad/the-oscar-award)
 
-## Repository Structure
-- `/requirements`: Contains the Functional Requirements CSV and the ORSD document.
-- `/datasets`: Contains the extension dataset file (or links).
-
 ## Group Members
 - Andrei Iulian Grozescu
 - Diego Moreno Dueñas
